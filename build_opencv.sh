@@ -9,7 +9,7 @@ cd ${OPENCV_SRC}/release
 cmake -D WITH_GTK_2_X=ON -D WITH_OPENGL=ON -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTLL_PREFIX=/usr/local -D WITH_TBB=ON ..
 make -j4 && make install
 
-ln /dev/null /dev/raw1394
+ln /usr/local/share/OpenCV/3rdparty/lib/libippicv.a /usr/local/lib/libippicv.a
 
 cd /
 rm -rf ${OPENCV_SRC}
